@@ -1,0 +1,56 @@
+﻿@model Entities.Models.Livre
+@{
+    ViewBag.Title = "AjoutLivreEmprunteur";
+    Layout = "~/Views/Shared/_LayoutLivre.cshtml";
+}
+
+<br />
+<h2>Ajout livre d'un emprunteur</h2>
+<br />
+
+
+@using (Html.BeginForm("AjoutLivreEmprunteur", "Livre", FormMethod.Post))
+{
+    <div class="reow mb-3">
+        @Html.LabelFor(m => m.Emprunteur.Id, new { @class = "col-sm-2 col-form-label" })
+        <div class="form-group col-sm-5">
+            @Html.TextBoxFor(m => m.Emprunteur.Id, null, new { type = "number", @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Emprunteur.Id, null, new { style = "color:red" })
+        </div>
+    </div>
+
+    <div class="reow mb-3">
+        @Html.LabelFor(m => m.Auteur, new { @class = "col-sm-2 col-form-label" })
+        <div class="form-group col-sm-5">
+            @Html.TextBoxFor(m => m.Auteur, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Auteur, null, new { style = "color:red" })
+        </div>
+    </div>
+
+    <div class="reow mb-3">
+        @Html.LabelFor(m => m.Titre, new { @class = "col-sm-2 col-form-label" })
+        <div class="form-group col-sm-5">
+            @Html.TextBoxFor(m => m.Titre, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Titre, null, new { style = "color:red" })
+        </div>
+    </div>
+
+    <div class="reow mb-3">
+        @Html.LabelFor(m => m.Annee)
+        @Html.TextBoxFor(m => m.Annee, null, new { type = "number", @class = "form-control" })
+        <div class="form-group col-sm-5">
+            @Html.ValidationMessageFor(m => m.Annee, null, new { style = "color:red" })
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-2 offset-2">
+            <input type="submit" value="Ajouter" class="btn btn-success" />
+        </div>
+        </div>
+
+        }
+
+        <br />
+        <h3 style="color:red; text-align:center">@ViewBag.Msg</h3>
+

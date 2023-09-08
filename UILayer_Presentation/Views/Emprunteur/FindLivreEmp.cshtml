@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "FindLivreEmp";
+}
+
+<h2>Rechercher les livres d'un Emprunteur</h2>
+<br />
+@using (Html.BeginForm("ListeLivreEmp", "Emprunteur", FormMethod.Post))
+{
+    <div class="reow mb-3">
+        @Html.Label("Id", "ID: ", new { @class = "col-sm-2 col-form-label" })
+        <div class="form-group col-sm-5">
+            @Html.TextBox("id", null, new { type = "number", @class = "form-control", required = true })
+            <!-- Validation coté client avec Required=true-->
+            <!--  Html.ValidationMessageFor(m => m.Nom, null, new { style = "color:red" }) Ceci etait la vamidation coté serveur-->
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-2 offset-2">
+            <input type="submit" value="Rechercher" class="btn btn-warning" />
+        </div>
+        </div>
+        }
+
+

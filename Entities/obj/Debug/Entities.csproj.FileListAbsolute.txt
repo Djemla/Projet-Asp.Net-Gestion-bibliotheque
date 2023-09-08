@@ -1,0 +1,6 @@
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Entities\bin\Debug\Entities.dll
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Entities\bin\Debug\Entities.pdb
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Entities\obj\Debug\Entities.csproj.AssemblyReference.cache
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Entities\obj\Debug\Entities.dll
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Entities\obj\Debug\Entities.pdb

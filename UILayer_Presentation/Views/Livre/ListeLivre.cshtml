@@ -1,0 +1,44 @@
+﻿<!-- Specifier le type du model de la vue-->
+<!-- Vu que c'est la liste qu'on veut exploiter ici et non les champs de l'emprunteur, on specifie la liste livre'-->
+@model List<Entities.Models.Livre>
+
+@{
+    ViewBag.Title = "ListeLivre";
+    Layout = "~/Views/Shared/_LayoutLivre.cshtml";
+}
+
+<br />
+<h2>Liste des Livres</h2>
+<br />
+<table class="table table-bordered border-primary">
+
+    <tr>
+        <th>ID</th>
+        <th>Auteur</th>
+        <th>Titre</th>
+        <th>Année</th>
+        <th>IdEmprunteur</th>
+        <th>Opération</th>
+
+    </tr>
+    <!-- Model stocke les elements qui sont renvoyés vers la vue à travers l'action du controller. Ici il stocke la liste des livres (listeLivres) qui a été renvoyé depuis l'action ListeLivre du controller Livre'-->
+    @foreach (var livre in Model)
+    {
+        <tr>
+            <td>@livre.Id</td>
+            <td>@livre.Auteur</td>
+            <td>@livre.Titre</td>
+            <td>@livre.Annee</td>
+            <td>@livre.Emprunteur.Id</td>
+            <!-- On veut créeer une methode juste à coté des infos du livre, pour modifier ou supprimmer directement le livre.-->
+            <td>
+                @Html.ActionLink("Modifier", "ModifLivLink", new { id = livre.Id }, new {style= "font-size: 12px", @class = "btn btn-warning" })
+                @Html.ActionLink("Supprimer", "SuppLivLink", new { id = livre.Id }, new { style = "font-size: 12px", @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+

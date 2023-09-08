@@ -1,0 +1,67 @@
+﻿@model Entities.Models.Livre
+@{
+    ViewBag.Title = "FindLivre";
+    Layout = "~/Views/Shared/_LayoutLivre.cshtml";
+}
+
+<br />
+<h2>Rechercher un Emprunteur</h2>
+<br />
+
+
+@using (Html.BeginForm("FindLivre", "Livre", FormMethod.Post))
+{
+    <div class="reow mb-3">
+        @Html.Label("Id", "ID: ", new { @class = "col-sm-2 col-form-label" })
+        <div class="form-group col-sm-5">
+            @Html.TextBox("id", null, new { type = "number", @class = "form-control", required = true })
+            <!-- Validation coté client avec Required=true-->
+            <!--  Html.ValidationMessageFor(m => m.Nom, null, new { style = "color:red" }) Ceci etait la vamidation coté serveur-->
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-2 offset-2">
+            <input type="submit" value="Rechercher" class="btn btn-warning" />
+        </div>
+        </div>
+        }
+
+
+        <br />
+        <br />
+
+        <!-- Model stocke les elements qui sont renvoyés vers la vue à travers l'action du controller. Ici il stocke les infos du livre (efind) qui a été renvoyé depuis l'action FindLivre du controller Livre.'-->
+        @if (Model != null)
+        {
+            <!-- 1. Si le livre est trouvé, il affiche le livre dans une table-->
+
+            <h2 style="color: red; text-align:center"> Livre trouvé</h2>
+            <table class="table table-bordered border-primary">
+
+                <tr>
+                    <th>ID</th>
+                    <th>Auteur</th>
+                    <th>Titre</th>
+                    <th>Année</th>
+                    <th>IdEmprunteur</th>
+
+                </tr>
+                <tr>
+                    <td>@Model.Id</td>
+                    <td>@Model.Auteur</td>
+                    <td>@Model.Titre</td>
+                    <td>@Model.Annee</td>
+                    <td>@Model.Emprunteur.Id</td>
+                </tr>
+
+
+            </table>
+        }
+
+        <!-- Si l'emprunteur pas trouvé, il affiche le message d'erreur spécifier dans ma methode d'action du controller Etudiant'-->
+        <br />
+        <h3 style="color: red; text-align:center">@ViewBag.Msg</h3>
+
+
+

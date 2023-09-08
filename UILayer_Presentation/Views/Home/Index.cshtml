@@ -1,0 +1,99 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<head>
+    <style>
+        body {
+            background-color: powderblue;
+            background-image: url(https://2.bp.blogspot.com/-4LFmqcrC_8E/TptHJE3lwPI/AAAAAAAAAM0/pKPo3q2wqho/s1600/library_book_cart.png);
+            background-repeat: no-repeat;
+            background-position: left top;
+            style ="color:blue; text-align:center; font-weight: bold;"
+        }
+
+        .vertical-menu {
+            width: 200px; /* Set a width if you like */
+        }
+
+            .vertical-menu a {
+                background-color: grey; /* Green background color */
+                color: black; /* Black text color */
+                display: block; /* Make the links appear below each other */
+                padding: 12px; /* Add some padding */
+                text-decoration: none; /* Remove underline from links */
+            }
+
+                .vertical-menu a:hover {
+                    background-color: #ccc; /* Dark grey background on mouse-over */
+                }
+
+                .vertical-menu a.active {
+                    background-color: #04AA6D; /* Add a green color to the "active/current" link */
+                    color: white;
+                }
+
+        ul li {
+            display: block;
+            text-align: center;
+            font-family: georgia;
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: white;
+            font-size: 19px;
+            vertical-align: middle;
+            list-style: none;
+            display: inline-block;
+            width: 250px;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            -ms-transform: translateY(-50%, -50%);
+            transform: translateY(-50%, -50%);
+        }
+
+        .footer {
+            bottom: 0%;
+            left: 50%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+    <h2 style="color: blue; font-weight: bold; font-family: georgia; position: absolute; left: 50%; "> Gestion d'une bibliotheque</h2>
+
+
+    <div class="center">
+        <div class="vertical-menu">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="row mb-3">@Html.ActionLink("Menu Emprunteur", "ListeEmrpunteur", "Emprunteur")</li>
+                <li class="row mb-3">@Html.ActionLink("Menu Livre", "ListeLivre", "Livre")</li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <footer style="position: absolute; bottom: 0%; left: 50%;"}>
+            <p>&copy; By LarissaFossi <i>- Mon application Biblio - @DateTime.Now.Year</i></p>
+        </footer>
+    </div>
+
+</body>
+
+
+
+

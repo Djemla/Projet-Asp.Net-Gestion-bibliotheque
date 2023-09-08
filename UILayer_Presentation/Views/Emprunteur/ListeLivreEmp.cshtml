@@ -1,0 +1,33 @@
+﻿@model List<Entities.Models.Livre>
+@{
+    ViewBag.Title = "ListeLivreEmp";
+}
+
+<br />
+<h2>Liste des livres de l'Emprunteur</h2>
+<br />
+<table class="table table-bordered border-primary">
+
+    <tr>
+        <th>ID</th>
+        <th>Auteur</th>
+        <th>Titre</th>
+        <th>Année</th>
+        <th>IdEmprunteur</th>
+
+    </tr>
+    <!-- Model stocke les elements qui sont renvoyés vers la vue à travers l'action du controller. Ici il stocke la liste des emprunteurs (listEmprunteur) qui a été renvoyé depuis l'action ListEmprunteur du controller Emprunteur.'-->
+    @foreach (var livre in Model)
+    {
+        <tr>
+            <td>@livre.Id</td>
+            <td>@livre.Auteur</td>
+            <td>@livre.Titre</td>
+            <td>@livre.Annee</td>
+            <td>@livre.Emprunteur.Id</td>
+        </tr>
+    }
+
+</table>
+
+

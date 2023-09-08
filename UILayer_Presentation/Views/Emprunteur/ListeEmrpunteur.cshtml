@@ -1,0 +1,41 @@
+﻿<!-- Specifier le type du model de la vue-->
+<!-- Vu que c'est la liste qu'on veut exploiter ici et non les champs de l'emprunteur, on specifie la liste emprunteur'-->
+@model List<Entities.Models.Emprunteur>
+
+@{
+    ViewBag.Title = "ListeEmrpunteur";
+}
+
+<br />
+<h2>Liste des Emprunteurs</h2>
+<br />
+<table class="table table-bordered border-primary">
+
+    <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>AnnéeNaissance</th>
+        <th>Opération</th>
+
+    </tr>
+    <!-- Model stocke les elements qui sont renvoyés vers la vue à travers l'action du controller. Ici il stocke la liste des emprunteurs (listEmprunteur) qui a été renvoyé depuis l'action ListEmprunteur du controller Emprunteur.'-->
+    @foreach (var emprunteur in Model)
+    {
+        <tr>
+            <td>@emprunteur.Id</td>
+            <td>@emprunteur.Nom</td>
+            <td>@emprunteur.Prenom</td>
+            <td>@emprunteur.AnneeNaissance</td>
+            <!-- On veut créer une methode juste à coté des infos de l'emprunteur, pour modifier ou supprimmer directement l'emprunteur, ou ajouter ou modifier l'association d'un livre-->
+            <td>
+                @Html.ActionLink("Modif Emprunteur", "ModifEmpLink", new { id = emprunteur.Id }, new { style = "font-size: 12px", @class = "btn btn-warning font-size: 10px" })
+                @Html.ActionLink("Supp Emprunteur", "SuppEmpLink", new { id = emprunteur.Id }, new { style = "font-size: 12px", @class = "btn btn-danger font-size: 10px" })
+                @Html.ActionLink("Ajout Livre", "AjoutLivreLink", new { id = emprunteur.Id }, new { style = "font-size: 12px", @class = "btn btn-success font-size: 10px" })
+                @Html.ActionLink("Supp Livre", "SuppLivreLink", new { id = emprunteur.Id }, new { style = "font-size: 12px", @class = "btn btn-danger font-size: 10px" })
+            </td>
+        </tr>
+    }
+
+</table>
+

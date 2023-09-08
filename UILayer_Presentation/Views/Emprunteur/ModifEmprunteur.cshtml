@@ -1,0 +1,53 @@
+﻿@model Entities.Models.Emprunteur
+@{
+    ViewBag.Title = "ModifEmprunteur";
+}
+
+<h2>Modifier un emprunteur</h2>
+<br />
+@using (Html.BeginForm("ModifEmprunteur", "Emprunteur", FormMethod.Post))
+{
+
+    <div class="reow mb-3">
+        @Html.LabelFor(m => m.Id, new { @class = "col-sm-2 col-form-label" })
+        <div class="form-group col-sm-5">
+            @Html.TextBoxFor(m => m.Id, null, new { type = "number", @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Id, null, new { style = "color:red" })
+        </div>
+    </div>
+
+    <div class="reow mb-3">
+        @Html.LabelFor(m => m.Nom, new { @class = "col-sm-2 col-form-label" })
+        <div class="form-group col-sm-5">
+            @Html.TextBoxFor(m => m.Nom, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Nom, null, new { style = "color:red" })
+        </div>
+    </div>
+
+    <div class="reow mb-3">
+        @Html.LabelFor(m => m.Prenom, new { @class = "col-sm-2 col-form-label" })
+        <div class="form-group col-sm-5">
+            @Html.TextBoxFor(m => m.Prenom, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Prenom, null, new { style = "color:red" })
+        </div>
+    </div>
+
+    <div class="reow mb-3">
+        @Html.LabelFor(m => m.AnneeNaissance, new { @class = "col-sm-2 col-form-label" })
+        <div class="form-group col-sm-5">
+            @Html.TextBoxFor(m => m.AnneeNaissance, null, new { type = "number", @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.AnneeNaissance, null, new { style = "color:red" })
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-2 offset-2">
+            <!-- La derniere fois on a utilisé button. On peut aussi utiliser input-->
+            <input type="submit" value="Modifier" class="btn btn-secondary" />
+        </div>
+        </div>
+
+        }
+
+        <br />
+        <h3 style="color:red; text-align:center">@ViewBag.Msg</h3>

@@ -1,0 +1,16 @@
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\bin\Debug\Dal_Dao.dll.config
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\bin\Debug\Dal_Dao.dll
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\bin\Debug\Dal_Dao.pdb
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\bin\Debug\Entities.dll
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\bin\Debug\EntityFramework.dll
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\bin\Debug\Entities.pdb
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\bin\Debug\EntityFramework.xml
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\obj\Debug\Dal_Dao.csproj.AssemblyReference.cache
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\obj\Debug\Dal_Dao.csproj.CoreCompileInputs.cache
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\obj\Debug\Dal_Dao.csproj.CopyComplete
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\obj\Debug\Dal_Dao.dll
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\obj\Debug\Dal_Dao.pdb
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\obj\Debug\Dal_Dao.Migrations.Creation.resources
+C:\Users\proch\Desktop\Formation_DTA\Workspace_DOTNET\ADO\06_Workspace_ASP_Net_MVC\Appli_Biblio_Asp_Net_EF\Dal_Dao\obj\Debug\Dal_Dao.csproj.GenerateResource.cache
